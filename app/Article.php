@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Article extends Model
 {
-    protected $table="categories";
+    protected $table="articles";
     
     public function comments(){
         return $this->hasMany('App\Article','article_id');
